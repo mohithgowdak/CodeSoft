@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="stylesc.css">
+</head>
+<body>
+    <div class="heading">
+    <h1>BASIC calculator</h1>
+    </div>
+  <div class="calculator">
+    <div class="screen" id="screen"></div>
+    <div>
+      <button class="button" onclick="appendToScreen('7')">7</button>
+      <button class="button" onclick="appendToScreen('8')">8</button>
+      <button class="button" onclick="appendToScreen('9')">9</button>
+      <button class="button operator" onclick="appendToScreen('+')">+</button>
+    </div>
+    <div>
+      <button class="button" onclick="appendToScreen('4')">4</button>
+      <button class="button" onclick="appendToScreen('5')">5</button>
+      <button class="button" onclick="appendToScreen('6')">6</button>
+      <button class="button operator" onclick="appendToScreen('-')">-</button>
+    </div>
+    <div>
+      <button class="button" onclick="appendToScreen('1')">1</button>
+      <button class="button" onclick="appendToScreen('2')">2</button>
+      <button class="button" onclick="appendToScreen('3')">3</button>
+      <button class="button operator" onclick="appendToScreen('*')">*</button>
+    </div>
+    <div>
+      <button class="button" onclick="appendToScreen('0')">0</button>
+      <button class="button" onclick="appendToScreen('.')">.</button>
+      <button class="button equal" onclick="calculate()">=</button>
+      <button class="button operator" onclick="appendToScreen('/')">/</button>
+    </div>
+    <div>
+      <button class="button clear" onclick="clearScreen()">C</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
