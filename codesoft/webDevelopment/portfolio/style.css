@@ -1,0 +1,383 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body 
+{
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+}
+
+.container
+{
+    max-width: 1200px;
+    margin: auto;
+    padding :right 20px;
+}
+
+/* Header styles */
+header {
+    
+    background-color: #333;
+    margin-top: 20px;
+    margin-left: 10px;
+    color: #fff;
+    padding: 20px 0;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.header-inner h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.header-inner p {
+    font-size: 18px;
+}
+
+/* About section styles */
+#about {
+    background-color: #333;
+    margin-left: 10px;
+    color: #fff;
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+
+.about-header img {
+    float: left;
+    overflow: hidden;
+    float: inline-start;
+    max-width: 10pc;
+    height: auto;
+    border-radius: 50%;
+}
+.about-header img:hover
+{   box-align: end;
+    transform: scale(2);
+}
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    align-items: center;
+    background-color: #333;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+.about-info h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.about-info p {
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Skills section styles */
+#skills {
+    background-color: #333;
+    
+    margin-left: 10px;
+    color: #fff;
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills h2 {
+    font-size: 24px;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Social media icons */
+.social-media {
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+.social-icon img {
+    
+    width: 40px;
+    height: 40px;
+
+border-radius: 50%;
+transition: transform 0.3s;
+animation: heartbeat 1.5s infinite;
+
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(0.75);
+    }
+    20% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(0.75);
+    }
+    60% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(0.75);
+    }
+    100% {
+        transform: scale(0.75);
+    }
+}
+.social-icon img:hover {
+    animation: NULL;
+    transform: scale(1.5);
+}
+/* projects*/
+#projects {
+    background-color: #333;
+    margin-left: 25px;
+    color: #fff;
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: flex-start; /* Adjust the horizontal spacing */
+    flex-wrap: nowrap; /* Ensure flex items stay in one line */
+    overflow-x: auto;
+}
+
+.project {
+    flex: 0 0 30%; /* Adjust the width of each project */
+    margin-top: 20px;
+    margin-right: 25px; /* Add space between the projects */
+    border: 5px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(0, 0, 10, 0.2);
+}
+
+.project h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.project a:hover {
+    background-color: #007bff;
+}
+
+
+/* certification styles section styles */
+#certi {
+    background-color: #333;
+    margin-left: 10px;
+    color: #fff;
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.certification h2 {
+    font-size: 24px;
+    color: #fff;
+}
+
+.certification {
+    margin-top: 20px;
+    border: 5px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.certification:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(0, 0, 10, 0.2);
+}
+
+.certification h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.certification img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.certification a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color:#333 ;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.certification a:hover {
+    background-color: #007bff;
+    border: radius 7px ;
+}
+/* Add more styles for Resume and Contact sections as needed */
+#resume {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 40px;
+    margin-left: 10px;
+    color: #fff;
+}
+
+#resume h2 {
+    font-size: 24px;
+    
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+#resume a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#resume a:hover {
+    text-decoration: underline;
+}
+/* Style the Contact section */
+#contact {
+    text-align: left;
+margin-top: 20px;
+background-color: #333;
+border-radius: 10px;
+padding: 40px;
+margin-left: 10px;
+color: #fff;
+}
+
+#contact h2 {
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    background-color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    background-color: #333;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    background-color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Keyframe animations */
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
