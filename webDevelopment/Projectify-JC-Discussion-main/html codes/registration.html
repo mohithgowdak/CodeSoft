@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJCE Discussion Forum Registration</title>
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>College Discussion Forum Registration</h2>
+        <form action="/submit_form" method="post">
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="major">Major:</label>
+                <select id="major" name="major" required>
+                    <option value="">Select Major</option>
+                    <option value="Computer Science and Engineering">Computer Science and Engineering</option>
+                    <option value="Electronics and Communication Engineering">Electronics and Communication Engineering</option>
+                    <option value="Electrical and Electronics Engineering">Electrical and Electronics Engineering</option>
+                    <option value="Mechanical Engineering">Mechanical Engineering</option>
+                    <option value="Civil Engineering">Civil Engineering</option>
+                    <!-- Add more options for other branches -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="year">Year of Graduation:</label>
+                <select id="year" name="year" required>
+                    <option value="">Select Year</option>
+                </select>
+            </div>
+
+            <script>
+                var select = document.getElementById("year");
+                var currentYear = new Date().getFullYear();
+                for (var i = 2014; i <= currentYear; i++) {
+                    var option = document.createElement("option");
+                    option.text = i;
+                    option.value = i;
+                    select.appendChild(option);
+                }
+            </script>
+
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="usn">University Serial Number (USN):</label>
+                <input type="text" id="usn" name="usn" required>
+            </div>
+
+            <div class="form-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the terms and conditions</label>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+
+        <h2>Login for Existing Candidates</h2>
+        <form action="/login" method="post">
+            <div class="form-group">
+                <label for="existingUsername">Username:</label>
+                <input type="text" id="existingUsername" name="existingUsername" required>
+            </div>
+
+            <div class="form-group">
+                <label for="existingPassword">Password:</label>
+                <input type="password" id="existingPassword" name="existingPassword" required>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Login">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
